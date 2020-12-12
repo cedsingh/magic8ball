@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Magic 8 Balls</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+	<main class="wrapper">
+		<img src="eight-ball.png" width="100" height="100">
+		<h2 style="margin-bottom: 10px">Magic 8 Balls</h2>
+		<section id="form">
+			<form onsubmit="return getName();" method="post">
+				<input type="text" name="name" id="userName" placeholder="Enter your name">
+				<input class="green" type="submit" name="submit" value="ENTER">
+			</form>
+		</section>
+		<div id="popup">
+			<h2 id="name">Hello!</h2>
+			<h3 style="margin-top: 20px">Do you want to start?</h3>
+			<div>
+				<button class="danger" onclick="quit()">No</button>
+				<button class="green" onclick="showQuesAns(true)">Yes</button>
+			</div>
+		</div>
+		<section id="quesAns">
+
+		</section>
+	</main>
+</body>
+<script type="text/javascript" src="magic.js"></script>
+</html>
